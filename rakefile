@@ -1,0 +1,11 @@
+require_relative '../lib/spec_helper'
+
+def relad! 
+    load './lib/bank_account.rb'
+    load './lib/transfer.rb'
+end
+
+desc "A Console"
+task :console do 
+    Pry.start
+end
